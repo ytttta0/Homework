@@ -17,7 +17,8 @@ st.subheader(f"📍 {location['locationName']} 36小時預報")
 for element in location["weatherElement"]:
     name = element["elementName"]
     value = element["time"][0]["parameter"]["parameterName"]
-    st.write(f"{name}：{value}")
+    st.write(f"{name}:{value}")
+
 
 
 
